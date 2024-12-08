@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="35" />
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true"></application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Required to access the user's location -->
+    <!-- The ACCESS_FINE_LOCATION permissions allows the API to use the Global Positioning System (GPS), WiFi, or mobile data to determine a precise a location as possible -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- ACCESS_COARSE_LOCATION permission allows the API to use WiFi or mobile data, or both, to determine the device's location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:allowBackup="true" android:icon="@mipmap/appicon"
+        android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="PASTE-YOUR-API-KEY-HERE" />
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+</manifest>
